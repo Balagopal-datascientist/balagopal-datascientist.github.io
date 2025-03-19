@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Scientist Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">DS<span class="highlight">.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Alex Johnson</span></h1>
+                <h2>Data Scientist & ML Engineer</h2>
+                <p>Transforming data into actionable insights and building intelligent solutions.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="data-visualization">
+                    <canvas id="dataCanvas"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="https://via.placeholder.com/400x500" alt="Alex Johnson">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>I'm a data scientist with 5+ years of experience in machine learning, statistical analysis, and data visualization. My passion lies in extracting meaningful insights from complex datasets and developing models that solve real-world problems.</p>
+                    <p>With a background in Computer Science and Statistics, I combine technical expertise with strong business acumen to deliver impactful solutions across various domains including finance, healthcare, and e-commerce.</p>
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn primary-btn">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>R</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>SQL</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Scikit-Learn</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>TensorFlow</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>PyTorch</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Visualization</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Matplotlib</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Seaborn</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Tableau</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="analytics">Data Analytics</button>
+                <button class="filter-btn" data-filter="visualization">Visualization</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="ml">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Customer Segmentation">
+                    </div>
+                    <div class="project-info">
+                        <h3>Customer Segmentation</h3>
+                        <p>Used K-means clustering to segment customers based on purchasing behavior.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Scikit-Learn</span>
+                            <span>Clustering</span>
+                        </div>
+                        <a href="#" class="btn secondary-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="analytics">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Sales Forecasting">
+                    </div>
+                    <div class="project-info">
+                        <h3>Sales Forecasting</h3>
+                        <p>Developed time series models to predict future sales for a retail company.</p>
+                        <div class="project-tags">
+                            <span>R</span>
+                            <span>Time Series</span>
+                            <span>ARIMA</span>
+                        </div>
+                        <a href="#" class="btn secondary-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="visualization">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="COVID-19 Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3>COVID-19 Dashboard</h3>
+                        <p>Created an interactive dashboard to visualize COVID-19 trends globally.</p>
+                        <div class="project-tags">
+                            <span>Tableau</span>
+                            <span>Data Visualization</span>
+                            <span>Dashboard</span>
+                        </div>
+                        <a href="#" class="btn secondary-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ml">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Sentiment Analysis">
+                    </div>
+                    <div class="project-info">
+                        <h3>Sentiment Analysis</h3>
+                        <p>Built an NLP model to analyze customer reviews and extract sentiment.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>NLTK</span>
+                            <span>NLP</span>
+                        </div>
+                        <a href="#" class="btn secondary-btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-cta">
+                <a href="#" class="btn primary-btn">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Alex's data analysis skills helped us identify key market trends that increased our revenue by 30%. Highly recommended!"</p>
+                        <div class="client-info">
+                            <div class="client-img">
+                                <img src="https://via.placeholder.com/100x100" alt="John Smith">
+                            </div>
+                            <div class="client-details">
+                                <h4>John Smith</h4>
+                                <p>CEO, TechCorp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"The predictive model Alex built for our supply chain optimization saved us millions in operational costs."</p>
+                        <div class="client-info">
+                            <div class="client-img">
+                                <img src="https://via.placeholder.com/100x100" alt="Sarah Johnson">
+                            </div>
+                            <div class="client-details">
+                                <h4>Sarah Johnson</h4>
+                                <p>COO, LogisticsPro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Alex's ability to translate complex data into actionable insights is remarkable. A true professional in the field."</p>
+                        <div class="client-info">
+                            <div class="client-img">
+                                <img src="https://via.placeholder.com/100x100" alt="Michael Chen">
+                            </div>
+                            <div class="client-details">
+                                <h4>Michael Chen</h4>
+                                <p>Director, DataDriven Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <div class="details">
+                            <h3>Email</h3>
+                            <p>alex.johnson@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-phone"></i></div>
+                        <div class="details">
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="details">
+                            <h3>Location</h3>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-kaggle"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">DS<span class="highlight">.</span></div>
+                <p>© 2023 Alex Johnson. All rights reserved.</p>
+            </div>
+            <div class="back-to-top">
+                <a href="#home"><i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -119,25 +119,34 @@ document.addEventListener('DOMContentLoaded', function() {
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
 
-            fetch('https://my-api-491141845252.europe-west1.run.app/contact', {
+            var myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
+
+            var raw = JSON.stringify({
+                name: name,
+                email: email,
+                subject: subject,
+                message: message
+            });
+
+            var requestOptions = {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ name, email, subject, message })
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.status === 'success') {
+                headers: myHeaders,
+                body: raw,
+                redirect: 'follow'
+            };
+
+            fetch("https://my-api-491141845252.europe-west1.run.app/contact", requestOptions)
+                .then(response => response.text())
+                .then(result => {
+                    console.log(result);
                     alert('Thank you for your message! I will get back to you soon.');
                     contactForm.reset();
-                } else {
+                })
+                .catch(error => {
+                    console.log('error', error);
                     alert('There was an error submitting your message. Please try again later.');
-                }
-            })
-            .catch(error => {
-                alert('There was an error submitting your message. Please try again later.');
-            });
+                });
         });
     }
     

@@ -114,22 +114,30 @@ document.addEventListener('DOMContentLoaded', function() {
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Get form values
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
-            
-            // Here you would typically send the form data to a server
-            // For demo purposes, we'll just log it to console
-            console.log('Form submitted:', { name, email, subject, message });
-            
-            // Show success message (in a real app, you'd do this after successful submission)
-            alert('Thank you for your message! I will get back to you soon.');
-            
-            // Reset form
-            contactForm.reset();
+
+            fetch('https://my-api-491141845252.europe-west1.run.app/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, email, subject, message })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    alert('Thank you for your message! I will get back to you soon.');
+                    contactForm.reset();
+                } else {
+                    alert('There was an error submitting your message. Please try again later.');
+                }
+            })
+            .catch(error => {
+                alert('There was an error submitting your message. Please try again later.');
+            });
         });
     }
     

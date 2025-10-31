@@ -41,12 +41,20 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Balagopal Narayanaswami</span></h1>
-                <h2>Data Scientist & ML Engineer</h2>
+                <!-- Added avatar near the intro -->
+                <div class="hero-intro">
+                    <img class="hero-avatar" src="https://media.licdn.com/dms/image/v2/C5603AQGHpQv8-JSOJA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1632152129909?e=1756339200&v=beta&t=xyndz81dr5bI9-gBqrp3kVan1TIvfLx8G_tMUe1CMvQ" alt="Balagopal Narayanaswami">
+                    <div class="hero-text">
+                        <h1>Hi, I'm <span class="highlight">Balagopal Narayanaswami</span></h1>
+                        <h2>Data Scientist & ML Engineer</h2>
+                    </div>
+                </div>
                 <p>Transforming data into actionable insights and building intelligent solutions.</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn primary-btn">View Projects</a>
                     <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                    <!-- New download resume button (assumes resume.pdf placed at site root) -->
+                    <a href="BalagopalNarayanaswami.pdf" download class="btn primary-btn download-btn">Download Resume</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -84,7 +92,37 @@
                             <span class="stat-label">Happy Firms</span>
                         </div>
                     </div>
-                    <a href="#" class="btn primary-btn">Download Resume</a>
+                    <a href="resume.pdf" download class="btn primary-btn">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Senior Data Scientist</h3>
+                        <p>Leading CV & NLP initiatives, end-to-end model development and deployment for client projects.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 - 2022</div>
+                    <div class="timeline-content">
+                        <h3>Machine Learning Engineer</h3>
+                        <p>Built production pipelines for object detection, RAG-based chatbots and automation tools.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - 2020</div>
+                    <div class="timeline-content">
+                        <h3>Data Scientist</h3>
+                        <p>Worked on analytics, data visualization and prototyping ML solutions across domains.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -187,7 +225,7 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section (updated project images) -->
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">My Projects</h2>
@@ -200,7 +238,7 @@
             <div class="projects-grid">
                 <div class="project-card" data-category="ml">
                     <div class="project-img">
-                        <img src="https://via.placeholder.com/600x400" alt="Object Detection">
+                        <img src="https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?auto=format&fit=crop&w=1200&q=60" alt="Defect Detection">
                     </div>
                     <div class="project-info">
                         <h3>Defect Detection for ball manufacturing firm</h3>
@@ -215,7 +253,7 @@
                 </div>
                 <div class="project-card" data-category="analytics">
                     <div class="project-img">
-                        <img src="https://via.placeholder.com/600x400" alt="Chatbot Creation (opensource)">
+                        <img src="https://images.unsplash.com/photo-1526378725298-43f0ac14b1c4?auto=format&fit=crop&w=1200&q=60" alt="Open-source Chatbot">
                     </div>
                     <div class="project-info">
                         <h3>Chatbot Creation (opensource)</h3>
@@ -230,7 +268,7 @@
                 </div>
                 <div class="project-card" data-category="visualization">
                     <div class="project-img">
-                        <img src="https://via.placeholder.com/600x400" alt="Multi client Chat Agent">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=60" alt="Multi-client Chat Agent">
                     </div>
                     <div class="project-info">
                         <h3>Multi client Chat Agent that handles images text and aditional features based on client</h3>
@@ -246,7 +284,7 @@
                 </div>
                 <div class="project-card" data-category="visualization">
                     <div class="project-img">
-                        <img src="https://via.placeholder.com/600x400" alt="Multi client Chat Agent">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=60" alt="Automation Apps">
                     </div>
                     <div class="project-info">
                         <h3>created automation apps for operations team</h3>
@@ -262,7 +300,7 @@
                 </div>
                 <div class="project-card" data-category="visualization">
                     <div class="project-img">
-                        <img src="https://via.placeholder.com/600x400" alt="review insights pipeline">
+                        <img src="https://images.unsplash.com/photo-1526378725298-43f0ac14b1c4?auto=format&fit=crop&w=1200&q=60" alt="Review Insights Pipeline">
                     </div>
                     <div class="project-info">
                         <h3>built an insights pipeline that has sentiments summaries and replies for customer reviews</h3>
@@ -278,7 +316,7 @@
                 </div>
                 <div class="project-card" data-category="ml">
                     <div class="project-img">
-                        <img src="https://via.placeholder.com/600x400" alt="Client based Object detection pipeline">
+                        <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1200&q=60" alt="Client Object Detection">
                     </div>
                     <div class="project-info">
                         <h3>Client based Object detection pipeline</h3>
